@@ -1,0 +1,11 @@
+D:\COSC286\HelloCSharp\MyClasses\bin\Debug\net8.0\MyClasses.deps.json
+D:\COSC286\HelloCSharp\MyClasses\bin\Debug\net8.0\MyClasses.dll
+D:\COSC286\HelloCSharp\MyClasses\bin\Debug\net8.0\MyClasses.pdb
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.AssemblyInfoInputs.cache
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.AssemblyInfo.cs
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.csproj.CoreCompileInputs.cache
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.dll
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\refint\MyClasses.dll
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.pdb
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\ref\MyClasses.dll
