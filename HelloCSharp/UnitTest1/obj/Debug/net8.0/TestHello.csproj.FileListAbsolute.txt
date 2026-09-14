@@ -105,3 +105,4 @@ D:\COSC286\HelloCSharp\UnitTest1\obj\Debug\net8.0\refint\TestHello.dll
 D:\COSC286\HelloCSharp\UnitTest1\obj\Debug\net8.0\TestHello.pdb
 D:\COSC286\HelloCSharp\UnitTest1\obj\Debug\net8.0\TestHello.genruntimeconfig.cache
 D:\COSC286\HelloCSharp\UnitTest1\obj\Debug\net8.0\ref\TestHello.dll
+D:\COSC286\HelloCSharp\UnitTest1\obj\Debug\net8.0\TestHello.sourcelink.json

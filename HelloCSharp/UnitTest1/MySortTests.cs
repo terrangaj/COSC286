@@ -44,5 +44,41 @@ namespace TestHello
             Assert.AreEqual("g", strings[i++]);
             Assert.AreEqual("z", strings[i++]);
         }
+
+        [Test]
+        public void TestBubbleSortInts()
+        {
+            int[] ints = { 5, 8, 3, 3, 7, 9 };
+            MySort.BubbleSort(ints, MySort.SortDirection.Ascending);
+            // sorted, it should be: a, b, e, f, g, z
+            int i = 0;
+            Assert.AreEqual(3, ints[i++]);
+            Assert.AreEqual(3, ints[i++]);
+            Assert.AreEqual(5, ints[i++]);
+            Assert.AreEqual(7, ints[i++]);
+            Assert.AreEqual(8, ints[i++]);
+            Assert.AreEqual(9, ints[i++]);
+        }
+
+        [Test]
+        public void TestDelegatedSort()
+        {
+            string[] strings = { "e", "a", "b", "f", "z", "g" };
+            MySort.Sort<string>(strings, MySort.SortDirection.Ascending, MySort.BubbleSort<string>);
+        }
+
+        [Test]
+        public void TestIsInOrder()
+        {
+            string[] strings = { "e", "a", "b", "f", "z", "g" };
+            Assert.IsFalse(MySort.IsInOrder<string>(strings, MySort.SortDirection.Ascending));
+            Assert.IsFalse(MySort.IsInOrder<string>(strings, MySort.SortDirection.Descending));
+            int[] orderedInts = { 2, 3, 6, 8, 100, 10001 };
+            Assert.IsTrue(MySort.IsInOrder<int>(orderedInts, MySort.SortDirection.Ascending));
+            Assert.IsFalse(MySort.IsInOrder<int>(orderedInts, MySort.SortDirection.Descending));
+        }
     }
 }
+
+    
+

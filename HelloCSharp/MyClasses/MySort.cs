@@ -8,15 +8,20 @@ using System.Threading.Tasks;
 namespace MyClasses
 {
     public static class MySort
-    { 
-        public enum SortDirection { Ascending, Descending };
+    {
 
-        public static void BubbleSort(string[] strings, SortDirection direction)
+        public delegate void dMySort<A>(A[] myItems, SortDirection dir);
+        public enum SortDirection { Ascending, Descending };
+        public static void Sort<X>(X[] items, SortDirection dir, dMySort<X> sortMethod)
         {
-            int end = strings.Length;
-            for (int i = 0; i < end; i++)
+            sortMethod(items, dir);
+        }
+
+        public static void BubbleSort<T>(T[] strings, SortDirection direction) where T : IComparable
+        { 
+            for (int i = 0; i < strings.Length; i++)
             {
-                for (int j = 0; j < end - i - 1; j++)
+                for (int j = 0; j < strings.Length - i - 1; j++)
                 {
                     if (ShouldSwap(strings[j], strings[j + 1], direction))
                     {
@@ -25,7 +30,46 @@ namespace MyClasses
                 }
             }
         }
-        public static bool ShouldSwap (string left, string right, SortDirection direction)
+
+
+        //Write a method called IsInOrder
+        //it should return a bool
+        //it should require a generic which must be IComparable
+        //It should take, as its parameters, an array of the generic type and a sort direction
+        //it should return true if that arrat is sorted in teh given direction
+        //it should return false otherwise
+        //algorithm:
+        //loop through each item, compare one to the one after
+        //check the sort direction and if the items are out of order return false
+        //if you get throught hte whole array and none of the items are out of order, return true
+
+        public static bool IsInOrder<B>(B[] items, SortDirection direction) where  B : IComparable
+        {
+            for (int i = 0; i < items.Length-1; i++)
+            {
+                if (direction == SortDirection.Ascending)
+                {
+                    if (items[i].CompareTo(items[i+1]) > 0)
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if(direction == SortDirection.Descending)
+                    {
+                        if(items[i].CompareTo(items[i + 1]) < 0)
+                        {
+                            return false;
+                        }
+                    }
+                }
+
+            }
+            return true;
+
+        }
+        public static bool ShouldSwap<T> (T left, T right, SortDirection direction) where T: IComparable
         {
             bool result = false;
             if (direction == SortDirection.Ascending)
@@ -40,9 +84,9 @@ namespace MyClasses
         
         }
     
-        public static void SwapItems (ref string left, ref string right)
+        public static void SwapItems<T> (ref T left, ref T right)
         {
-            string tmp = left;
+            T tmp = left;
             left = right;
             right = tmp;
         }

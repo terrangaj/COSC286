@@ -9,3 +9,4 @@ D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.dll
 D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\refint\MyClasses.dll
 D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.pdb
 D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\ref\MyClasses.dll
+D:\COSC286\HelloCSharp\MyClasses\obj\Debug\net8.0\MyClasses.sourcelink.json
