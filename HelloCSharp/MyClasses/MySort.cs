@@ -18,7 +18,7 @@ namespace MyClasses
         }
 
         public static void BubbleSort<T>(T[] strings, SortDirection direction) where T : IComparable
-        { 
+        {
             for (int i = 0; i < strings.Length; i++)
             {
                 for (int j = 0; j < strings.Length - i - 1; j++)
@@ -28,6 +28,17 @@ namespace MyClasses
                         SwapItems(ref strings[j], ref strings[j + 1]);
                     }
                 }
+            }
+        }
+
+        public static void BozoSort<T>(T[] items, SortDirection dir) where T: IComparable
+        {
+            Random rnd = new Random();
+            while (!IsInOrder(items, dir))
+            {
+                int firstItemIndex = rnd.Next(items.Length);
+                int secondItemIndex = rnd.Next(items.Length);
+                SwapItems<T>(ref items[firstItemIndex], ref items[secondItemIndex]);
             }
         }
 

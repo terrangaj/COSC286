@@ -77,6 +77,18 @@ namespace TestHello
             Assert.IsTrue(MySort.IsInOrder<int>(orderedInts, MySort.SortDirection.Ascending));
             Assert.IsFalse(MySort.IsInOrder<int>(orderedInts, MySort.SortDirection.Descending));
         }
+
+        [Test]
+        public void TestBozo()
+        {
+            string[] strings = { "e", "a", "b", "f", "z", "g" };
+            MySort.Sort<string>(strings, MySort.SortDirection.Ascending, MySort.BozoSort<string>);
+            Assert.IsFalse(MySort.IsInOrder<string>(strings, MySort.SortDirection.Ascending));
+            Assert.IsFalse(MySort.IsInOrder<string>(strings, MySort.SortDirection.Descending));
+            int[] orderedInts = { 2, 3, 6, 8, 100, 10001 };
+            Assert.IsTrue(MySort.IsInOrder<int>(orderedInts, MySort.SortDirection.Ascending));
+            Assert.IsFalse(MySort.IsInOrder<int>(orderedInts, MySort.SortDirection.Descending));
+        }
     }
 }
 

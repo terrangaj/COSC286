@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\COSC286\\HelloCSharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53108F38-FC23-40FF-9DC0-16741FA9FF05}|UnitTest1\\TestHello.csproj|d:\\cosc286\\hellocsharp\\unittest1\\mysorttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53108F38-FC23-40FF-9DC0-16741FA9FF05}|UnitTest1\\TestHello.csproj|solutionrelative:unittest1\\mysorttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9532FB68-157D-4BE9-8C6D-8D9DF2480CE4}|MyClasses\\MyClasses.csproj|d:\\cosc286\\hellocsharp\\myclasses\\mysort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9532FB68-157D-4BE9-8C6D-8D9DF2480CE4}|MyClasses\\MyClasses.csproj|solutionrelative:myclasses\\mysort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53108F38-FC23-40FF-9DC0-16741FA9FF05}|UnitTest1\\TestHello.csproj|d:\\cosc286\\hellocsharp\\unittest1\\mysorttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53108F38-FC23-40FF-9DC0-16741FA9FF05}|UnitTest1\\TestHello.csproj|solutionrelative:unittest1\\mysorttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,13 +22,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MySort.cs",
               "DocumentMoniker": "D:\\COSC286\\HelloCSharp\\MyClasses\\MySort.cs",
               "RelativeDocumentMoniker": "MyClasses\\MySort.cs",
               "ToolTip": "D:\\COSC286\\HelloCSharp\\MyClasses\\MySort.cs",
               "RelativeToolTip": "MyClasses\\MySort.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAUwCkAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-09T17:09:14.234Z",
               "EditorCaption": ""
@@ -41,13 +41,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MySortTests.cs",
               "DocumentMoniker": "D:\\COSC286\\HelloCSharp\\UnitTest1\\MySortTests.cs",
               "RelativeDocumentMoniker": "UnitTest1\\MySortTests.cs",
               "ToolTip": "D:\\COSC286\\HelloCSharp\\UnitTest1\\MySortTests.cs",
               "RelativeToolTip": "UnitTest1\\MySortTests.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwD4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv1EAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-09T17:10:38.819Z",
               "EditorCaption": ""
