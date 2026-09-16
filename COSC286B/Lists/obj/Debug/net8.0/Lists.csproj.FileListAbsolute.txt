@@ -1,0 +1,16 @@
+D:\COSC286\COSC286B\Lists\bin\Debug\net8.0\Lists.deps.json
+D:\COSC286\COSC286B\Lists\bin\Debug\net8.0\Lists.dll
+D:\COSC286\COSC286B\Lists\bin\Debug\net8.0\Lists.pdb
+D:\COSC286\COSC286B\Lists\bin\Debug\net8.0\DataStructuresCommon.dll
+D:\COSC286\COSC286B\Lists\bin\Debug\net8.0\DataStructuresCommon.pdb
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.csproj.AssemblyReference.cache
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.GeneratedMSBuildEditorConfig.editorconfig
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.AssemblyInfoInputs.cache
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.AssemblyInfo.cs
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.csproj.CoreCompileInputs.cache
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.sourcelink.json
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.csproj.Up2Date
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.dll
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\refint\Lists.dll
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\Lists.pdb
+D:\COSC286\COSC286B\Lists\obj\Debug\net8.0\ref\Lists.dll

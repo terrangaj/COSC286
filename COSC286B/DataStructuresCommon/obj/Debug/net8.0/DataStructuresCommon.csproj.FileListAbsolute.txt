@@ -1,0 +1,12 @@
+D:\COSC286\COSC286B\DataStructuresCommon\bin\Debug\net8.0\DataStructuresCommon.deps.json
+D:\COSC286\COSC286B\DataStructuresCommon\bin\Debug\net8.0\DataStructuresCommon.dll
+D:\COSC286\COSC286B\DataStructuresCommon\bin\Debug\net8.0\DataStructuresCommon.pdb
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.GeneratedMSBuildEditorConfig.editorconfig
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.AssemblyInfoInputs.cache
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.AssemblyInfo.cs
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.csproj.CoreCompileInputs.cache
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.sourcelink.json
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.dll
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\refint\DataStructuresCommon.dll
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\DataStructuresCommon.pdb
+D:\COSC286\COSC286B\DataStructuresCommon\obj\Debug\net8.0\ref\DataStructuresCommon.dll
