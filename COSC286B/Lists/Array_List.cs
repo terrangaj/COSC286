@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using System.Windows.Markup;
 
 namespace Lists
@@ -39,7 +40,18 @@ namespace Lists
 
         public override void Clear()
         {
-            throw new NotImplementedException();
+            values = new T[0];
+        }
+
+
+
+        public override T ElementAt(int index)
+        {
+            if (index < 0 || index >= values.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            return values[index];
         }
 
         public override IEnumerator<T> GetEnumerator()
@@ -49,22 +61,99 @@ namespace Lists
 
         public override void Insert(int index, T data)
         {
-            throw new NotImplementedException();
+            //create new array, bigger than the old one
+
+            //loop through the new values in the old array
+            //keep track of the position in both the old array and the new one
+            // if at the insertion point insert the new data
+
+            //after copying everything and inserting the new data
+            //make sure to set values = the new array
+            if (index < 0 || index >= values.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            T[] temp = new T[values.Length+1];
+
+            for (int i = 0; i< index;i++)
+            {
+                temp[i] = values[i];
+            }
+            temp[index] = data;
+
+            for (int j = index; j < values.Length; j++)
+            {
+                temp[j+1] = values[j];
+            }
+            values = temp;
+
         }
+
+        public override int IndexOf(T data)
+        {
+            for (int i = 0;i< values.Length;i ++)
+            {
+                if (data.Equals(values[i]))
+                {
+                    return i;
+                }
+
+            }
+            throw new ApplicationException("Could not find item " + data + " in list.");
+        }
+
 
         public override bool Remove(T data)
         {
-            throw new NotImplementedException();
+            try
+            {
+                int indexOfItemToRemove = IndexOf(data);
+                RemoveAt(indexOfItemToRemove);
+                return true;
+            }
+            catch (ApplicationException e)
+            {
+                return false;
+            }
+            
         }
 
         public override T RemoveAt(int index)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index > values.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
+
+            T[] temp = new T[values.Length - 1];
+            
+            for (int i = 0; i< values.Length-1; i++)
+            {
+                if (i < index)
+                {
+                    temp[i] = values[i];
+                }
+                else
+                {
+                    temp[i] = values[i + 1];
+                }
+            }
+            T value = values[index];
+            values = temp;
+            return value;
+            //keep track of the item removed
+            //create an array one shorter than the last one
+            //loop throught the old array copying every value excepti the one being replaced
+            //when youre done remember to 
+            // replace the values attribute with the shorter one
+            // return the item that was removed
         }
 
         public override T ReplaceAt(int index, T data)
         {
-            throw new NotImplementedException();
+            T tReturn = values[index];
+            values[index] = data;
+            return tReturn;
         }
 
         private class Enumerator : IEnumerator<T>

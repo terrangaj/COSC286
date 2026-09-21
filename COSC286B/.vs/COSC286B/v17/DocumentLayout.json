@@ -30,21 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ListsTests.cs",
-              "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
-              "RelativeDocumentMoniker": "Tests\\ListsTests.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
-              "RelativeToolTip": "Tests\\ListsTests.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvyQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T17:25:27.678Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -53,7 +40,7 @@
               "RelativeDocumentMoniker": "Lists\\Array_List.cs",
               "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\Array_List.cs",
               "RelativeToolTip": "Lists\\Array_List.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAswMQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T17:12:43.068Z",
               "EditorCaption": ""
@@ -81,8 +68,7 @@
               "RelativeToolTip": "Lists\\I_List.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwDIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T16:40:48.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T16:40:48.437Z"
             },
             {
               "$type": "Document",
@@ -94,7 +80,25 @@
               "RelativeToolTip": "DataStructuresCommon\\A_Collection.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAWwBMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T16:04:19.273Z",
+              "WhenOpened": "2026-09-16T16:04:19.273Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListsTests.cs",
+              "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
+              "RelativeDocumentMoniker": "Tests\\ListsTests.cs",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
+              "RelativeToolTip": "Tests\\ListsTests.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAADwv2MAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T17:25:27.678Z",
               "EditorCaption": ""
             }
           ]

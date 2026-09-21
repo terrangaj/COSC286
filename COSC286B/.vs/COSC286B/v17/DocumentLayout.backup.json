@@ -34,26 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListsTests.cs",
-              "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
-              "RelativeDocumentMoniker": "Tests\\ListsTests.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs*",
-              "RelativeToolTip": "Tests\\ListsTests.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvykAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T17:25:27.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Array_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\Array_List.cs",
               "RelativeDocumentMoniker": "Lists\\Array_List.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\Array_List.cs*",
-              "RelativeToolTip": "Lists\\Array_List.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAA0wCAAAAAtAAAAAAAAAA==",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\Array_List.cs",
+              "RelativeToolTip": "Lists\\Array_List.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwIEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T17:12:43.068Z",
               "EditorCaption": ""
@@ -64,8 +51,8 @@
               "Title": "A_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\A_List.cs",
               "RelativeDocumentMoniker": "Lists\\A_List.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\A_List.cs*",
-              "RelativeToolTip": "Lists\\A_List.cs*",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\A_List.cs",
+              "RelativeToolTip": "Lists\\A_List.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T16:49:06.897Z",
@@ -77,12 +64,11 @@
               "Title": "I_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\I_List.cs",
               "RelativeDocumentMoniker": "Lists\\I_List.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\I_List.cs*",
-              "RelativeToolTip": "Lists\\I_List.cs*",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\I_List.cs",
+              "RelativeToolTip": "Lists\\I_List.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwDIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T16:40:48.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T16:40:48.437Z"
             },
             {
               "$type": "Document",
@@ -90,11 +76,29 @@
               "Title": "A_Collection.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\DataStructuresCommon\\A_Collection.cs",
               "RelativeDocumentMoniker": "DataStructuresCommon\\A_Collection.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\DataStructuresCommon\\A_Collection.cs*",
-              "RelativeToolTip": "DataStructuresCommon\\A_Collection.cs*",
+              "ToolTip": "D:\\COSC286\\COSC286B\\DataStructuresCommon\\A_Collection.cs",
+              "RelativeToolTip": "DataStructuresCommon\\A_Collection.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAWwBMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T16:04:19.273Z",
+              "WhenOpened": "2026-09-16T16:04:19.273Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListsTests.cs",
+              "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
+              "RelativeDocumentMoniker": "Tests\\ListsTests.cs",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
+              "RelativeToolTip": "Tests\\ListsTests.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAADwv2MAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T17:25:27.678Z",
               "EditorCaption": ""
             }
           ]
