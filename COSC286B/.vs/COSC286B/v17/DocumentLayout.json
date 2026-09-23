@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\COSC286\\COSC286B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|d:\\cosc286\\cosc286b\\lists\\array_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|solutionrelative:lists\\array_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|d:\\cosc286\\cosc286b\\tests\\liststests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|solutionrelative:tests\\liststests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|d:\\cosc286\\cosc286b\\lists\\linked_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|solutionrelative:lists\\linked_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|d:\\cosc286\\cosc286b\\lists\\array_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|solutionrelative:lists\\array_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|d:\\cosc286\\cosc286b\\lists\\a_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Linked_List.cs",
+              "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\Linked_List.cs",
+              "RelativeDocumentMoniker": "Lists\\Linked_List.cs",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\Linked_List.cs",
+              "RelativeToolTip": "Lists\\Linked_List.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwJkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T16:16:11.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Array_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\Array_List.cs",
               "RelativeDocumentMoniker": "Lists\\Array_List.cs",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "A_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\A_List.cs",
               "RelativeDocumentMoniker": "Lists\\A_List.cs",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "Lists\\A_List.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T16:49:06.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T16:49:06.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "I_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\I_List.cs",
               "RelativeDocumentMoniker": "Lists\\I_List.cs",
@@ -72,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "A_Collection.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\DataStructuresCommon\\A_Collection.cs",
               "RelativeDocumentMoniker": "DataStructuresCommon\\A_Collection.cs",
@@ -90,13 +106,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ListsTests.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
               "RelativeDocumentMoniker": "Tests\\ListsTests.cs",
               "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
               "RelativeToolTip": "Tests\\ListsTests.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAADwv2MAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAANQAAAAAAAAAAAAswN0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T17:25:27.678Z",
               "EditorCaption": ""
