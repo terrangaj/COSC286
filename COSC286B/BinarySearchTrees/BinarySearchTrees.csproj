@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>siaBLWdisable</ImplicitUsings>
+    <Nullable>disagble</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructuresCommon\DataStructuresCommon.csproj" />
+  </ItemGroup>
+
+</Project>

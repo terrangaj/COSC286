@@ -378,6 +378,19 @@
           }
         }
       },
+      "BinarySearchTrees/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DataStructuresCommon": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BinarySearchTrees.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BinarySearchTrees.dll": {}
+        }
+      },
       "DataStructuresCommon/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -994,6 +1007,11 @@
         "version.txt"
       ]
     },
+    "BinarySearchTrees/1.0.0": {
+      "type": "project",
+      "path": "../BinarySearchTrees/BinarySearchTrees.csproj",
+      "msbuildProject": "../BinarySearchTrees/BinarySearchTrees.csproj"
+    },
     "DataStructuresCommon/1.0.0": {
       "type": "project",
       "path": "../DataStructuresCommon/DataStructuresCommon.csproj",
@@ -1007,6 +1025,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BinarySearchTrees >= 1.0.0",
       "Lists >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "NUnit >= 3.14.0",
@@ -1048,6 +1067,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BinarySearchTrees.csproj": {
+              "projectPath": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BinarySearchTrees.csproj"
+            },
             "D:\\COSC286\\COSC286B\\Lists\\Lists.csproj": {
               "projectPath": "D:\\COSC286\\COSC286B\\Lists\\Lists.csproj"
             }

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\COSC286\\COSC286B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|d:\\cosc286\\cosc286b\\tests\\liststests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|solutionrelative:tests\\liststests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|d:\\cosc286\\cosc286b\\lists\\linked_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|solutionrelative:lists\\linked_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|d:\\cosc286\\cosc286b\\tests\\liststests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|solutionrelative:tests\\liststests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F77E443-9A18-48BA-918C-0AE62881D78E}|Lists\\Lists.csproj|d:\\cosc286\\cosc286b\\lists\\array_list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,13 +38,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Linked_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\Linked_List.cs",
               "RelativeDocumentMoniker": "Lists\\Linked_List.cs",
               "ToolTip": "D:\\COSC286\\COSC286B\\Lists\\Linked_List.cs*",
               "RelativeToolTip": "Lists\\Linked_List.cs*",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAQwJkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwIAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T16:16:11.138Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "Lists\\Array_List.cs",
               "ViewState": "AgIAALIAAAAAAAAAAAAswMQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T17:12:43.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T17:12:43.068Z"
             },
             {
               "$type": "Document",
@@ -106,12 +105,12 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ListsTests.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
               "RelativeDocumentMoniker": "Tests\\ListsTests.cs",
-              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs*",
-              "RelativeToolTip": "Tests\\ListsTests.cs*",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\ListsTests.cs",
+              "RelativeToolTip": "Tests\\ListsTests.cs",
               "ViewState": "AgIAANQAAAAAAAAAAAAswN0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T17:25:27.678Z",

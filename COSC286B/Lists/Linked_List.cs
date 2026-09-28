@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Lists
 {
@@ -70,10 +72,79 @@ namespace Lists
             return new LinkedListEnumerator(this);
         }
 
+
+        public override int IndexOf(T data)
+        {
+            Node current = head;
+            int index = 0;
+            //loop throug h the list until either we find our item
+            //or we hit the end
+            while (current != null)
+            {
+                if (data.Equals(current.data))
+                {
+                    return index;
+
+                }
+                current = current.next;
+                index++;
+            }
+            //if we hit a null, it means the item isnt present so well
+            //throw an exceptiomn
+            throw new ApplicationException("Could not find item " + data + " In the list");
+
+        }
+
         public override void Insert(int index, T data)
         {
-            throw new NotImplementedException();
+            // We need to first check boundaries
+            Node current = head;
+            //if (index > this.Count || index < 0)
+            //{
+            //    throw new IndexOutOfRangeException("Index " + index + " is out of bounds.");
+            //}
+
+            //if (index == 0)
+            //{
+            //    head = new Node(data, head);
+            //}
+            //else
+            //{
+            //    recInsert(index, head, data);
+            //}
+            // Then progress through the list until we find our insertion point
+            // The neighbour before our insertion point - the parent - has to have
+            // their next value changed to point at our new node, and the new node's
+            // next value has to point at the parent's old next value
+            throw new ApplicationException("index out of bounds");
         }
+
+
+        private Node RecInsert(int index, Node current, T data)
+        {
+            //my base case for tracking is if the index is 0
+            //meaning we are at the location to insert in
+            if (index == 0)
+            {
+                current = new Node(data, current);
+            }
+            else
+            {
+                //recursive case, we are not at the insertion point yet
+                current.next = RecInsert(--index, current.next, data);
+            }
+        }
+        //private void recInsert(int index, Node current, T data)
+        //{
+        //    if (index == 1)
+        //    {
+        //        current.next = new Node(data, current.next);
+        //    }
+        //    else
+        //    {
+        //        recInsert(--index, current.next, data);
+        //    }
+        //}
 
         //public override bool Remove(T data)
         //{
