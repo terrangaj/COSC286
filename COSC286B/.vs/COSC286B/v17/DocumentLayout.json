@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\COSC286\\COSC286B\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|d:\\cosc286\\cosc286b\\binarysearchtrees\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|solutionrelative:binarysearchtrees\\bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|d:\\cosc286\\cosc286b\\tests\\bsttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7ABC55E-43C3-41DD-A2DE-742C9D33E014}|Tests\\Tests.csproj|solutionrelative:tests\\bsttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|d:\\cosc286\\cosc286b\\binarysearchtrees\\a_bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|solutionrelative:binarysearchtrees\\a_bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|d:\\cosc286\\cosc286b\\binarysearchtrees\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|solutionrelative:binarysearchtrees\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A33E7478-B6BC-4F5B-9461-0C68633EFCBF}|BinarySearchTrees\\BinarySearchTrees.csproj|d:\\cosc286\\cosc286b\\binarysearchtrees\\i_bst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,32 +59,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BST.cs",
+              "DocumentMoniker": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BST.cs",
+              "RelativeDocumentMoniker": "BinarySearchTrees\\BST.cs",
+              "ToolTip": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BST.cs",
+              "RelativeToolTip": "BinarySearchTrees\\BST.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwHwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T16:50:20.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BSTTests.cs",
+              "DocumentMoniker": "D:\\COSC286\\COSC286B\\Tests\\BSTTests.cs",
+              "RelativeDocumentMoniker": "Tests\\BSTTests.cs",
+              "ToolTip": "D:\\COSC286\\COSC286B\\Tests\\BSTTests.cs",
+              "RelativeToolTip": "Tests\\BSTTests.cs",
+              "ViewState": "AgIAAAsAAACA//////8rwFEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T16:43:24.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Node.cs",
+              "DocumentMoniker": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\Node.cs",
+              "RelativeDocumentMoniker": "BinarySearchTrees\\Node.cs",
+              "ToolTip": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\Node.cs",
+              "RelativeToolTip": "BinarySearchTrees\\Node.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T16:35:19.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "A_BST.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\A_BST.cs",
               "RelativeDocumentMoniker": "BinarySearchTrees\\A_BST.cs",
               "ToolTip": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\A_BST.cs",
               "RelativeToolTip": "BinarySearchTrees\\A_BST.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-28T17:47:31.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BinarySearchTrees",
+              "DocumentIndex": 5,
+              "Title": "BinarySearchTrees.csproj",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BinarySearchTrees.csproj",
               "RelativeDocumentMoniker": "BinarySearchTrees\\BinarySearchTrees.csproj",
               "ToolTip": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BinarySearchTrees.csproj",
               "RelativeToolTip": "BinarySearchTrees\\BinarySearchTrees.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-28T17:36:05.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T17:36:05.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "I_BST.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\I_BST.cs",
               "RelativeDocumentMoniker": "BinarySearchTrees\\I_BST.cs",
@@ -80,12 +130,11 @@
               "RelativeToolTip": "BinarySearchTrees\\I_BST.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T17:33:30.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-28T17:33:30.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Linked_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\Linked_List.cs",
               "RelativeDocumentMoniker": "Lists\\Linked_List.cs",
@@ -93,12 +142,11 @@
               "RelativeToolTip": "Lists\\Linked_List.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAAwHoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T16:16:11.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T16:16:11.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Array_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\Array_List.cs",
               "RelativeDocumentMoniker": "Lists\\Array_List.cs",
@@ -110,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "A_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\A_List.cs",
               "RelativeDocumentMoniker": "Lists\\A_List.cs",
@@ -122,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "I_List.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\Lists\\I_List.cs",
               "RelativeDocumentMoniker": "Lists\\I_List.cs",
@@ -134,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "A_Collection.cs",
               "DocumentMoniker": "D:\\COSC286\\COSC286B\\DataStructuresCommon\\A_Collection.cs",
               "RelativeDocumentMoniker": "DataStructuresCommon\\A_Collection.cs",

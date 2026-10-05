@@ -1,0 +1,6 @@
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.csproj.AssemblyReference.cache
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.GeneratedMSBuildEditorConfig.editorconfig
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.AssemblyInfoInputs.cache
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.AssemblyInfo.cs
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.csproj.CoreCompileInputs.cache
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.sourcelink.json
