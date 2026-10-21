@@ -9,6 +9,68 @@ namespace BinarySearchTrees
 {
     public class AVLT<T>: BST<T> where T: IComparable<T>
     {
+
+        /// <summary>
+        /// Balances a subtree
+        /// </summary>
+        /// <param name="nCurrent">root of a subtree to balance</param>
+        /// <returns>the root node of the newly balanced subtree</returns>
+        internal override Node<T> Balance(Node<T> nCurrent)
+        {
+            //store a reference to the new root of the tree, which ill
+            //start off assuming is going to be nCurrent
+            Node<T> nNew = nCurrent;
+
+            //check that ncurrent isnt null - if it is, nothing will change
+            if (nCurrent != null)
+            {
+             
+            
+            // we need to compute the balance factor of the current node
+            //we only need to balance if the current has a balance factor of less than -1 
+            //or greater than +1
+
+                if (GetHeightDifference(nCurrent) > 1)
+                {
+                    if (GetHeightDifference(nCurrent.Right) < 0)
+                    {
+                        nNew = DoubleLeft(nCurrent);
+                    }
+                    else
+                    {
+                        nNew = SingleLeft(nCurrent);
+                    }
+                }
+                else if (GetHeightDifference(nCurrent) < -1)
+                {
+                    if (GetHeightDifference(nCurrent.Left) > 0)
+                    {
+                        nNew = DoubleRight(nCurrent);
+                    }
+                    else
+                    {
+                        nNew = SingleRight(nCurrent);
+                    }
+                }
+            }
+
+            return nNew;
+            //if were unbalanced to the right (balance factor > 1)
+                //we know if we are unbalanced to the right, well need to do a left rotation
+                //but which one, we need to find out the balance facotor of the right subtree
+                //if the right child is left heavy
+                //perform a double left of the currnet node
+                //otherwise, perform a single left ont he current node
+            //if it is unbalanced to the left (balance factor < -1)
+            //we need the balance factor fo the left subtree
+            //if the left child is right heavy
+            //perform a double right on the current node
+            //otherwise perform a single right on the current node
+            //if it is not unbalanced we dont need to change anything
+
+
+            //return the new root of the tree
+        }
         //normally id want a method to calculate the balance factor to be private
         //but im going to make it public and static for testing reasons
 
