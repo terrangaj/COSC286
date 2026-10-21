@@ -4,3 +4,13 @@ D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.Assembl
 D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.AssemblyInfo.cs
 D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.csproj.CoreCompileInputs.cache
 D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.sourcelink.json
+D:\COSC286\COSC286B\BinarySearchTrees\bin\Debug\net8.0\BinarySearchTrees.deps.json
+D:\COSC286\COSC286B\BinarySearchTrees\bin\Debug\net8.0\BinarySearchTrees.dll
+D:\COSC286\COSC286B\BinarySearchTrees\bin\Debug\net8.0\BinarySearchTrees.pdb
+D:\COSC286\COSC286B\BinarySearchTrees\bin\Debug\net8.0\DataStructuresCommon.dll
+D:\COSC286\COSC286B\BinarySearchTrees\bin\Debug\net8.0\DataStructuresCommon.pdb
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySe.442DC3D2.Up2Date
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.dll
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\refint\BinarySearchTrees.dll
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\BinarySearchTrees.pdb
+D:\COSC286\COSC286B\BinarySearchTrees\obj\Debug\net8.0\ref\BinarySearchTrees.dll

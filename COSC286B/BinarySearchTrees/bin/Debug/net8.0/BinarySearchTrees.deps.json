@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BinarySearchTrees/1.0.0": {
+        "dependencies": {
+          "DataStructuresCommon": "1.0.0"
+        },
+        "runtime": {
+          "BinarySearchTrees.dll": {}
+        }
+      },
+      "DataStructuresCommon/1.0.0": {
+        "runtime": {
+          "DataStructuresCommon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BinarySearchTrees/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataStructuresCommon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

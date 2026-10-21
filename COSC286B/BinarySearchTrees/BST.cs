@@ -5,6 +5,7 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace BinarySearchTrees
 {
@@ -216,6 +217,8 @@ namespace BinarySearchTrees
             
         }
 
+        
+
         public override IEnumerator<T> GetEnumerator()
         {
             throw new NotImplementedException();
@@ -247,7 +250,7 @@ namespace BinarySearchTrees
             return iHeight;
         }
 
-        protected int recHeight(Node<T> nCurrent)
+        protected static int recHeight(Node<T> nCurrent)
         {
             int iHeightLeft = 0;
             int iHeightRight = 0;
@@ -266,7 +269,41 @@ namespace BinarySearchTrees
 
         public override void Iterate(ProcessData<T> pd, TRAVERSALORDER order)
         {
-            throw new NotImplementedException();
+            if (nRoot != null) {
+                recIterate(nRoot, pd, order);
+            }
+        }
+
+        private void recIterate(Node<T> nCurrent, ProcessData<T> pd, TRAVERSALORDER to)
+        {
+            //preorder:
+            //root, then left then right
+
+            if (to == TRAVERSALORDER.PRE_ORDER)
+            {
+                pd(nCurrent.Data);
+            }
+
+            if (nCurrent.Left != null)
+            {
+               recIterate(nCurrent.Left, pd, to);
+            }
+            // IN-ORDER:
+            // Left, then Root, then Right
+            if (to == TRAVERSALORDER.IN_ORDER)
+            {
+                pd(nCurrent.Data);
+            }
+            if (nCurrent.Right != null)
+            {
+                recIterate(nCurrent.Right, pd, to);
+            }
+            // POST-ORDER:
+            // Left, then Right, then Root:
+            if (to == TRAVERSALORDER.POST_ORDER)
+            {
+                pd(nCurrent.Data);
+            }
         }
 
         public override bool Remove(T data)
@@ -352,6 +389,69 @@ namespace BinarySearchTrees
             return "Tree (" + nRoot + ")";
         }
 
+        public IEnumerator<T> GetBreadthFirstEnumerator()
+        {
+            return new BreadthFirstEnumerator(this);
+        }
+
+        private class BreadthFirstEnumerator : IEnumerator<T>
+        {
+            public T Current => nCurrent.Data;
+            Node<T> nCurrent = null;
+            BST<T> tree = null;
+            Queue<Node<T>> sNodes;
+
+            public BreadthFirstEnumerator(BST<T> tree)
+            {
+                this.tree = tree;
+                Reset();
+            }
+
+            object IEnumerator.Current => Current;
+
+            public void Dispose()
+            {
+                
+            }
+
+            public bool MoveNext()
+            {
+                bool bMoved = false;
+
+                if (sNodes.Count > 0)
+                {
+                    nCurrent = sNodes.Dequeue();
+                    if (nCurrent.Left != null)
+                    {
+                        sNodes.Enqueue(nCurrent.Left);
+                    }
+                    if (nCurrent.Right != null)
+                    {
+                        sNodes.Enqueue(nCurrent.Right);
+                    }
+                    
+                    bMoved = true;
+                }
+                return bMoved;
+            }
+        
+        
+
+            public void Reset()
+            {
+                sNodes = new Queue<Node<T>>();
+                // Remember upon reset, an enumerator should be *before* the first item
+                // Since the Stack is the list of items to visit in the future,
+                // if we put the first item on the stack, that means we're before
+                // the first item:
+                if (tree.nRoot != null)
+                {
+                    sNodes.Enqueue(tree.nRoot);
+                }
+
+            }
+        }
+
         private class DepthFirstEnumerator : IEnumerator<T>
         {
 
@@ -380,7 +480,26 @@ namespace BinarySearchTrees
 
             public bool MoveNext()
             {
-                throw new NotImplementedException();
+                //if there are nodes left in the stack (Stack has a count property we can check):
+                bool bMoved = false;
+                if (sNodes.Count > 0)
+                {
+                    nCurrent = sNodes.Pop();
+                    if (nCurrent.Right != null)
+                    {
+                        sNodes.Push(nCurrent.Right);
+                    }
+                    if (nCurrent.Left != null)
+                    {
+                        sNodes.Push(nCurrent.Left);
+                    }
+                    bMoved = true;
+                }
+                return bMoved;
+                //   Grab the next node from the stack and make it the current one
+                //   if it has childre, add them to the stack
+                //          add right first then left
+                //return whether or not we were able to advance to the next node
             }
 
             public void Reset()

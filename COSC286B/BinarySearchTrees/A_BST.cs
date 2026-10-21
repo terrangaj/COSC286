@@ -22,5 +22,39 @@ namespace BinarySearchTrees
         //A_Collection's count counts the items by enumerating the entire data structure
         //if we keep track of the count, we can do this faster:
         public override int Count { get => iCount; }
+
+        public static bool operator ==(A_BST<T> tree1, A_BST<T> tree2)
+        {
+            if ((object)tree1 == null && (object)tree2 == null)
+            {
+                return true;
+            }
+            if ((object)tree1 == null || (object)tree2 == null)
+            {
+                return false;
+            }
+            return recEquals(tree1.nRoot, tree2.nRoot);
+        }
+
+        private static bool recEquals(Node<T> node1, Node<T> node2)
+        {
+            if (node1 == null && node2 == null)
+            {
+                return true;
+            }
+            if (node1 == null || node2 == null)
+            {
+                return false;
+            }
+
+            return node1.Data.CompareTo(node2.Data) == 0
+            && recEquals(node1.Left, node2.Left)
+            && recEquals(node1.Right, node2.Right);
+        }
+
+        public static bool operator !=(A_BST<T> tree1, A_BST<T> tree2)
+        {
+            return !(tree1 == tree2);
+        }
     }
 }

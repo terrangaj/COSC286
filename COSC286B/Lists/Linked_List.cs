@@ -62,10 +62,7 @@ namespace Lists
             head = null;
         }
 
-        public override T ElementAt(int index)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public override IEnumerator<T> GetEnumerator()
         {
@@ -116,6 +113,7 @@ namespace Lists
             // The neighbour before our insertion point - the parent - has to have
             // their next value changed to point at our new node, and the new node's
             // next value has to point at the parent's old next value
+            
             throw new ApplicationException("index out of bounds");
         }
 
@@ -133,6 +131,7 @@ namespace Lists
                 //recursive case, we are not at the insertion point yet
                 current.next = RecInsert(--index, current.next, data);
             }
+            return current;
         }
         //private void recInsert(int index, Node current, T data)
         //{
@@ -240,13 +239,45 @@ namespace Lists
 
         public override T RemoveAt(int index)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index >= Count)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            return recRemoveAt(ref head, index);
         }
+
+        private T recRemoveAt(ref Node current, int index)
+        {
+            if (index == 0)
+            {
+                T removed = current.data;
+                current = current.next;
+                return removed;
+            }
+            return recRemoveAt(ref current.next, index - 1);
+        }
+
 
         public override T ReplaceAt(int index, T data)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index >= Count)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            else
+            {
+                Node current = head;
+                for (int i = 0; i<index; i++)
+                {
+                    current = current.next;
+                }
+                T oldData = current.data;
+                current.data = data;
+                return oldData;
+            }
+
         }
+
         /// <summary>
         /// a single node in a linked list which stores data of type t
         /// </summary>
@@ -292,7 +323,9 @@ namespace Lists
 
             public void Dispose()
             {
-                throw new NotImplementedException();
+                list = null;
+                scout = null;
+                lastVisited = null;
             }
 
             public bool MoveNext()

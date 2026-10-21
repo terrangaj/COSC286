@@ -267,7 +267,64 @@ namespace Tests
             
         }
 
-        
+        [Test]
+        public void TestRemoveAtFirst()
+        {
+            Linked_List<string> list = new Linked_List<string>();
+            list.Add("a");
+            list.Add("b");
+            list.Add("c");
+            Assert.AreEqual("a", list.RemoveAt(0));
+            Assert.AreEqual(2, list.Count);
+            Assert.AreEqual("b", list.ElementAt(0));
+        }
+
+        [Test]
+        public void TestRemoveAtLast()
+        {
+            Linked_List<string> list = new Linked_List<string>();
+            list.Add("a");
+            list.Add("b");
+            list.Add("c");
+            Assert.AreEqual("c", list.RemoveAt(2));
+            Assert.AreEqual(2, list.Count);
+            Assert.AreEqual("b", list.ElementAt(1));
+        }
+
+        [Test]
+        public void TestRemoveAtOutOfBounds()
+        {
+            Linked_List<string> list = new Linked_List<string>();
+            list.Add("a");
+            list.Add("b");
+            Assert.Throws<IndexOutOfRangeException>(() => list.RemoveAt(-1));
+            Assert.Throws<IndexOutOfRangeException>(() => list.RemoveAt(2));
+        }
+
+        [Test]
+        public void TestReplaceAtFirstAndLast()
+        {
+            Linked_List<string> list = new Linked_List<string>();
+            list.Add("a");
+            list.Add("b");
+            list.Add("c");
+            Assert.AreEqual("a", list.ReplaceAt(0, "X"));
+            Assert.AreEqual("c", list.ReplaceAt(2, "Y"));
+            Assert.AreEqual("X", list.ElementAt(0));
+            Assert.AreEqual("Y", list.ElementAt(2));
+            Assert.AreEqual(3, list.Count);
+        }
+
+        [Test]
+        public void TestReplaceAtOutOfBounds()
+        {
+            Linked_List<string> list = new Linked_List<string>();
+            list.Add("a");
+            Assert.Throws<IndexOutOfRangeException>(() => list.ReplaceAt(-1, "Z"));
+            Assert.Throws<IndexOutOfRangeException>(() => list.ReplaceAt(1, "Z"));
+        }
+
+
 
 
 

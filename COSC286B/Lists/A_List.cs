@@ -14,7 +14,7 @@ namespace Lists
     /// <typeparam name="T">The type this list is storing</typeparam>
     public abstract class A_List<T>: A_Collection<T>, I_List<T> where T: IComparable<T>
     {
-        public virtual T ElementAT(int index)
+        public virtual T ElementAt(int index)
         {
 
             //The defualt operator in C# returns a default of the type
@@ -44,7 +44,6 @@ namespace Lists
             return tReturn;
         }
 
-        public abstract T ElementAt(int index);
 
         //Frequently people will create method body and just throw an exception
         //when they havent coded it yet
