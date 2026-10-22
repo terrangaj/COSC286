@@ -23,6 +23,14 @@ namespace BinarySearchTrees
         //if we keep track of the count, we can do this faster:
         public override int Count { get => iCount; }
 
+
+        /// <summary>
+        /// Checks if two trees are equal. Two trees are equal if they have exactly
+        /// the same structure and every matching node holds an equal value
+        /// </summary>
+        /// <param name="tree1">The first tree to compare</param>
+        /// <param name="tree2">The second tree to compare</param>
+        /// <returns>True if the trees are equal, false otherwise</returns>
         public static bool operator ==(A_BST<T> tree1, A_BST<T> tree2)
         {
             if ((object)tree1 == null && (object)tree2 == null)
@@ -36,6 +44,12 @@ namespace BinarySearchTrees
             return recEquals(tree1.nRoot, tree2.nRoot);
         }
 
+        /// <summary>
+        /// Recursively compares two subtrees node by node
+        /// </summary>
+        /// <param name="node1">Current node in the first tree</param>
+        /// <param name="node2">Matching node in the second tree</param>
+        /// <returns>True if both subtrees have the same structure and values</returns>
         private static bool recEquals(Node<T> node1, Node<T> node2)
         {
             if (node1 == null && node2 == null)
@@ -52,6 +66,13 @@ namespace BinarySearchTrees
             && recEquals(node1.Right, node2.Right);
         }
 
+
+        /// <summary>
+        /// Checks if two trees are not equal. Returns the opposite of ==
+        /// </summary>
+        /// <param name="tree1">The first tree to compare</param>
+        /// <param name="tree2">The second tree to compare</param>
+        /// <returns>True if the trees are different, false if they are equal</returns>
         public static bool operator !=(A_BST<T> tree1, A_BST<T> tree2)
         {
             return !(tree1 == tree2);

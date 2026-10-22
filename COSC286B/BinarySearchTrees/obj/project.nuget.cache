@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MAo2oS2tb8U=",
+  "dgSpecHash": "772rkzUgGkw=",
   "success": true,
-  "projectFilePath": "D:\\COSC286\\COSC286B\\BinarySearchTrees\\BinarySearchTrees.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\terra\\COSC286\\COSC286B\\BinarySearchTrees\\BinarySearchTrees.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\terra\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.32\\microsoft.netcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\terra\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.32\\microsoft.windowsdesktop.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\terra\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.32\\microsoft.aspnetcore.app.ref.8.0.32.nupkg.sha512"
+  ],
   "logs": []
 }

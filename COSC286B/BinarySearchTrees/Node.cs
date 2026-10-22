@@ -44,11 +44,11 @@ namespace BinarySearchTrees
             string sRight = "";
             if (Left != null)
             {
-                sLeft = "L(" + Left + ")";
+                sLeft = " L(" + Left + ")";
             }
             if (Right != null)
             {
-                sRight = "R(" + Right + ")";
+                sRight = " R(" + Right + ")";
             }
 
             return Data + sLeft + sRight;

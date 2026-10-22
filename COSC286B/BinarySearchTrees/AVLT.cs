@@ -159,6 +159,11 @@ namespace BinarySearchTrees
             return SingleRight(nOldRoot);
         }
 
+        /// <summary>
+        /// Adds a new item to the tree without using recursion, then balances
+        /// every node on the path back up to the root
+        /// </summary>
+        /// <param name="data">The item to add</param>
         public override void Add(T data)
         {
             iCount++;
@@ -186,20 +191,80 @@ namespace BinarySearchTrees
                     nNode.Right = nChild;
                 }
 
-                int nDiff = GetHeightDifference(nNode);
-                if (nDiff > 1)
-                {
-                    nNode = GetHeightDifference(nNode.Right) < 0 ? DoubleLeft(nNode) : SingleLeft(nNode);
-                }
-                else if (nDiff < -1)
-                {
-                    nNode = GetHeightDifference(nNode.Left) > 0 ? DoubleRight(nNode) : SingleRight(nNode);
-                }
-
-                nChild = nNode;
+                nChild = Balance(nNode);
             }
 
             nRoot = nChild;
+        }
+
+        /// <summary>
+        /// Visits every node in the tree in the given order without using recursion,
+        /// running the given method on each node's data
+        /// </summary>
+        /// <param name="pd">The method to run on each data item</param>
+        /// <param name="order">The traversal order: pre-order, in-order or post-order</param>
+        public override void Iterate(ProcessData<T> pd, TRAVERSALORDER order)
+        {
+            if (nRoot != null)
+            {
+                if (order == TRAVERSALORDER.PRE_ORDER)
+                {
+                    Stack<Node<T>> sNodes = new Stack<Node<T>>();
+                    sNodes.Push(nRoot);
+                    while (sNodes.Count > 0)
+                    {
+                        Node<T> nCurrent = sNodes.Pop();
+                        pd(nCurrent.Data);
+                        if (nCurrent.Right != null)
+                        {
+                            sNodes.Push(nCurrent.Right);
+                        }
+                        if (nCurrent.Left != null)
+                        {
+                            sNodes.Push(nCurrent.Left);
+                        }
+                    }
+                }
+                else if (order == TRAVERSALORDER.IN_ORDER)
+                {
+                    Stack<Node<T>> sNodes = new Stack<Node<T>>();
+                    Node<T> nCurrent = nRoot;
+                    while (nCurrent != null || sNodes.Count > 0)
+                    {
+                        while (nCurrent != null)
+                        {
+                            sNodes.Push(nCurrent);
+                            nCurrent = nCurrent.Left;
+                        }
+                        nCurrent = sNodes.Pop();
+                        pd(nCurrent.Data);
+                        nCurrent = nCurrent.Right;
+                    }
+                }
+                else if (order == TRAVERSALORDER.POST_ORDER)
+                {
+                    Stack<Node<T>> sNodes = new Stack<Node<T>>();
+                    Stack<Node<T>> sOutput = new Stack<Node<T>>();
+                    sNodes.Push(nRoot);
+                    while (sNodes.Count > 0)
+                    {
+                        Node<T> nCurrent = sNodes.Pop();
+                        sOutput.Push(nCurrent);
+                        if (nCurrent.Left != null)
+                        {
+                            sNodes.Push(nCurrent.Left);
+                        }
+                        if (nCurrent.Right != null)
+                        {
+                            sNodes.Push(nCurrent.Right);
+                        }
+                    }
+                    while (sOutput.Count > 0)
+                    {
+                        pd(sOutput.Pop().Data);
+                    }
+                }
+            }
         }
 
     }

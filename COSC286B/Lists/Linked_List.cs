@@ -95,7 +95,7 @@ namespace Lists
         public override void Insert(int index, T data)
         {
             // We need to first check boundaries
-            Node current = head;
+            // Node current = head;
             //if (index > this.Count || index < 0)
             //{
             //    throw new IndexOutOfRangeException("Index " + index + " is out of bounds.");
@@ -113,8 +113,14 @@ namespace Lists
             // The neighbour before our insertion point - the parent - has to have
             // their next value changed to point at our new node, and the new node's
             // next value has to point at the parent's old next value
+
+            if (index < 0 || index >= Count)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            head = RecInsert(index, head, data);
             
-            throw new ApplicationException("index out of bounds");
+            // throw new ApplicationException("index out of bounds");
         }
 
 
@@ -237,6 +243,12 @@ namespace Lists
             return bRemoved;
         }
 
+
+        /// <summary>
+        /// Removes the item at the given position in the list
+        /// </summary>
+        /// <param name="index">The position of the item to remove</param>
+        /// <returns>The item that was removed</returns>
         public override T RemoveAt(int index)
         {
             if (index < 0 || index >= Count)
@@ -246,6 +258,14 @@ namespace Lists
             return recRemoveAt(ref head, index);
         }
 
+
+        /// <summary>
+        /// Recursive helper for RemoveAt. Moves one node forward each call,
+        /// counting the index down until it reaches the node to remove
+        /// </summary>
+        /// <param name="current">The current node, passed by ref so the link pointing at it can be changed</param>
+        /// <param name="index">How many more nodes to move before reaching the one to remove</param>
+        /// <returns>The data from the removed node</returns>
         private T recRemoveAt(ref Node current, int index)
         {
             if (index == 0)
@@ -258,6 +278,12 @@ namespace Lists
         }
 
 
+        /// <summary>
+        /// Replaces the item at the given position with new data
+        /// </summary>
+        /// <param name="index">The position of the item to replace</param>
+        /// <param name="data">The new data to put at that position</param>
+/// <returns>The item that was replaced</returns>
         public override T ReplaceAt(int index, T data)
         {
             if (index < 0 || index >= Count)

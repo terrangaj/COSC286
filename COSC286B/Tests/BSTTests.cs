@@ -34,6 +34,7 @@ public class BSTTests
     [SetUp]
     public void BSTSetup()
     {
+        iBST = new BST<int>();
         iBST.Add(50);
         iBST.Add(20);
         iBST.Add(27);
@@ -119,7 +120,7 @@ public class BSTTests
     public void TestAdd()
     {
         Assert.AreEqual(8, iBST.Count);
-        string treeString = "Tree (50 L(20 R(27 L(22)) R(77 R(90 L(89) R(91))))";
+        string treeString = "Tree (50 L(20 R(27 L(22))) R(77 R(90 L(89) R(91))))";
         Assert.AreEqual(treeString, iBST.ToString());
     }
 
@@ -247,6 +248,7 @@ public class AVLTTests
     [SetUp]
     public void AVLTSetup()
     {
+        iAVLT = new AVLT<int>();
         iAVLT.Add(50);
         iAVLT.Add(20);
         iAVLT.Add(27);
@@ -393,17 +395,17 @@ public class AVLTTests
         IEnumerator<int> myEnum = iAVLT.GetBreadthFirstEnumerator();
         myEnum.Reset();
         Assert.IsTrue(myEnum.MoveNext());
-        Assert.AreEqual(50, myEnum.Current);
+        Assert.AreEqual(27, myEnum.Current);
         Assert.IsTrue(myEnum.MoveNext());
         Assert.AreEqual(20, myEnum.Current);
         Assert.IsTrue(myEnum.MoveNext());
         Assert.AreEqual(77, myEnum.Current);
         Assert.IsTrue(myEnum.MoveNext());
-        Assert.AreEqual(27, myEnum.Current);
+        Assert.AreEqual(22, myEnum.Current);
+        Assert.IsTrue(myEnum.MoveNext());
+        Assert.AreEqual(50, myEnum.Current);
         Assert.IsTrue(myEnum.MoveNext());
         Assert.AreEqual(90, myEnum.Current);
-        Assert.IsTrue(myEnum.MoveNext());
-        Assert.AreEqual(22, myEnum.Current);
         Assert.IsTrue(myEnum.MoveNext());
         Assert.AreEqual(89, myEnum.Current);
         Assert.IsTrue(myEnum.MoveNext());
@@ -417,7 +419,7 @@ public class AVLTTests
     public void TestAVLTAdd()
     {
         Assert.AreEqual(8, iAVLT.Count);
-        string treeString = "Tree (50 L(20 R(27 L(22)) R(77 R(90 L(89) R(91))))";
+        string treeString = "Tree (27 L(20 R(22)) R(77 L(50) R(90 L(89) R(91))))";
         Assert.AreEqual(treeString, iAVLT.ToString());
     }
 
@@ -434,8 +436,8 @@ public class AVLTTests
         sTree.Add("C");
         sTree.Add("D");
         sTree.Add("E");
-        Assert.AreEqual(4, sTree.Height());
+        Assert.AreEqual(2, sTree.Height());
         sTree.Add("1");
-        Assert.AreEqual(4, sTree.Height());
+        Assert.AreEqual(2, sTree.Height());
     }
 }

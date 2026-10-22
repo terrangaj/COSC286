@@ -21,6 +21,7 @@ namespace BinarySearchTrees
         }
         public override void Add(T data)
         {
+            iCount++;
             //where do we add new nodes to the tree? Where they belong of course!
             //the really easy case is when the tree is empty
             if (nRoot == null)
@@ -273,6 +274,8 @@ namespace BinarySearchTrees
                 recIterate(nRoot, pd, order);
             }
         }
+
+        
 
         private void recIterate(Node<T> nCurrent, ProcessData<T> pd, TRAVERSALORDER to)
         {

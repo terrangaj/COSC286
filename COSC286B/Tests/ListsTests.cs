@@ -35,7 +35,7 @@ namespace Tests
             list.Add(100001);
             Assert.AreEqual(99, list.ElementAt(0));
             Assert.AreEqual(3303, list.ElementAt(2));
-            Assert.AreEqual(10001, list.ElementAt(3));
+            Assert.AreEqual(100001, list.ElementAt(3));
         }
 
         [Test]
@@ -157,7 +157,7 @@ namespace Tests
             list.Add(100001);
             Assert.AreEqual(99, list.ElementAt(0));
             Assert.AreEqual(3303, list.ElementAt(2));
-            Assert.AreEqual(10001, list.ElementAt(3));
+            Assert.AreEqual(100001, list.ElementAt(3));
         }
 
         [Test]
